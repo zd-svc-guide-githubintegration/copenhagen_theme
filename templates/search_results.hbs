@@ -13,7 +13,7 @@
 
   <div class="search-results">
     <aside class="search-results-sidebar">
-      {{#if help_center_filters}}
+      {{#if source_filters}}
         <section class="filters-in-section collapsible-sidebar" aria-expanded="false">
           <button type="button" class="collapsible-sidebar-toggle" aria-expanded="false">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" focusable="false" viewBox="0 0 12 12" aria-hidden="true" class="collapsible-sidebar-toggle-icon chevron-icon">
@@ -25,7 +25,7 @@
           </button>
           <h3 class="collapsible-sidebar-title sidenav-title">{{t 'filter_by_help_center'}}</h3>
           <ul class="multibrand-filter-list multibrand-filter-list--collapsed">
-            {{#each help_center_filters}}
+            {{#each source_filters}}
               <li>
               {{#if selected}}
                 <a href="{{url}}" class="sidenav-item current" aria-current="page">
@@ -53,7 +53,7 @@
           </button>
           <h3 class="collapsible-sidebar-title sidenav-title">{{t 'filter_by_type'}}</h3>
           <ul class="multibrand-filter-list multibrand-filter-list--collapsed">
-            {{#each filters}}
+            {{#each type_filters}}
               <li>
               {{#if selected}}
                 <a href="{{url}}" class="sidenav-item current" aria-current="page">
